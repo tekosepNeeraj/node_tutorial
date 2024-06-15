@@ -1,4 +1,5 @@
 const fs=require("fs");
+const os=require("os")
 
 // fs.writeFileSync("./test.txt","Welcome in fs module");
 
@@ -12,7 +13,8 @@ const fs=require("fs");
 //         console.log(result);
 //     }
 // })
-fs.appendFileSync("./test.txt","This is fs append feature\n");
+// fs.appendFileSync("./test.txt","This is fs append feature\n");
 
 // fs.cpSync("./test.txt", "./copy.txt")
-fs.unlinkSync("./contact.txt");
+// fs.unlinkSync("./contact.txt");
+console.log("os length",os.cpus().length);
